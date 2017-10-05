@@ -13,7 +13,8 @@ namespace week2_day3
             ////when writing a method it has to be outside of static void main because it is a method
             //int answer = Add(5,);
             //Console.WriteLine(answer);
-            FavFood("for", "chicken");
+            //FavFood("for", "chicken");
+            RetirementCalculator(4);
 
         }
         public static int Add(int firstNumber , int secondNumber)
@@ -27,7 +28,13 @@ namespace week2_day3
             string conCad = name + " " + food;
             Console.WriteLine(conCad);
             
-            return   ;
+            return;
+        }
+        public static void RetirementCalculator(int age)
+        {
+            int calc = 65 - age;
+            Console.WriteLine( "You will retire in : "+ (calc) + " years");
+            return;
         }
     }
 }
