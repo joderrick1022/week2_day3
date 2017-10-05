@@ -14,7 +14,9 @@ namespace week2_day3
             //int answer = Add(5,);
             //Console.WriteLine(answer);
             //FavFood("for", "chicken");
-            RetirementCalculator(4);
+            // RetirementCalculator(4);
+           
+            Console.WriteLine(WageCalculator(2,4));
 
         }
         public static int Add(int firstNumber , int secondNumber)
@@ -34,7 +36,14 @@ namespace week2_day3
         {
             int calc = 65 - age;
             Console.WriteLine( "You will retire in : "+ (calc) + " years");
-            return;
+            return;// return is not needed for a void
+           // int reitire age = Math.Max(0, 65 - age);the math function
         }
+        public static double WageCalculator(double hours,double wages)
+        {
+            double calc = hours * wages;
+            return calc;
+        }
+
     }
 }
